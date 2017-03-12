@@ -1,0 +1,12 @@
+﻿※ 로그의 보존 형식이 변경이 되었습니다.
+변경전：회수, newsfile.log,NOWINNER/유저 정보(id,password,f_name,l_name,sex,cl,no,endtime,att,def,...)
+변경 후：회수, prefix      ,NOWINNER/유저 정보(id,password,f_name,l_name,)
+             ~~~~~~                                                     ~~~
+(이)가 되었습니다.
+다만, 유저 정보에 관해서는 변경전의 기술 방법에서도 정상적으로 움직입니다.
+newsfile.log의 파일명은 prefix로 변경해 주세요.
+(예：100PGnewsfile.log -> 100 PG)
+prefix에 따라 newsfile.log, userdatfile.log, areafile.log가 참조됩니다.
+유저 파일이 존재하지 않는 경우는, 변경전의 유저 정보보다 표시합니다.
+areafile.log가 존재하지 않는 경우는, 진행 상황의 금지 에리어의 표시부분이 표시되지 않습니다.
+newsfile.log가 존재하지 않는 경우는, 진행 상황을 표시하지 않습니다.
