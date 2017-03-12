@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    div.row.gameMode
+        h2#currentPlace.red.text-center
+        div.col-sm-8
+            h5.text-center.bg-black-red.padding5px 스테이터스
+            div#battleInfo
+            div#radar
+            div.row
+                div#characterInfo.col-sm-6
+                div#equipItem.col-sm-6
+            div#currentSkills
+            div#logger
+
+        div.col-sm-4
+            h5.text-center.bg-black-red.padding5px 커맨드
+            div#placeSelector.text-center.padding5px
+            div#commander
+    hr.mobile-only
+
+block content-header
+    script(src='/static/javascripts/socket.io-1.2.0.js')
+    script(src='/static/javascripts/react-0.14.3.min.js')
+    script(src='/static/javascripts/react-dom-0.14.3.min.js')
+    script(src='/static/javascripts/browser.min.js')
+
+block content-footer
+    script(type='text/babel', src='/static/javascripts/controller.js')
